@@ -1,0 +1,150 @@
+#ten_chinh{
+    padding: 0 ;
+    margin: 0 ;
+}
+
+h2 {
+    color: black;
+}
+
+h1 {
+    color: rgb(31, 31, 31);
+}
+
+#ten_chinh {
+    background-color: #508dff;
+    text-align:center;
+    padding :80px;
+}
+nav {
+    background-color:rgb(199, 199, 199);
+    margin: 0px 0px 5px 0px;
+    /* padding:14px 20px; */
+    overflow: hidden;
+}
+nav a {
+    color:rgb(255, 255, 255);
+    padding: 14px 20px ;
+    display : block ;
+    text-align: center;
+    text-decoration-line: none;
+    /* float: left; */
+}
+nav a.ben_phai {
+    float: right;
+}
+nav a.ben_trai {
+    float:left;
+}
+nav a:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+#anh_trai {
+    padding : 20px;
+    margin : 0px 0px 0px 0px;
+    flex: 35%;
+    background-color: rgb(224, 224, 224);
+}
+#vungbenphai {
+    padding : 20px ;
+    margin : 0px 0px 0px 5px;
+    background-color: rgb(224, 224, 224);
+    flex:65%;
+}
+#flex_container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#chu_cuoi_dong {
+    margin-top: 170px;
+}
+footer a {
+    /* text-decoration-line: none; */
+    color :rgba(255, 255, 255, 0.372)
+}
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(172, 172, 172)
+}
+table {
+    border-style :solid;
+}
+#table {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ffffff;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #ffffff;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #25d192;
+  color: white;
+}
+.thanhphanmucbang{
+    /* width: 33%;
+    float: left; */
+    text-align: center;
+    flex:33%;
+}
+/* chỉnh tỉ lệ ảnh ( cắt /ko cắt) */
+.classanh{
+   width:90%;
+   height:68%;
+   object-fit: cover;
+   }
+#Mucbang_container {
+    display:flex;
+    flex-wrap:wrap;
+}
+.noidungmucbang{
+    font-size:150%;
+    font-weight:bold;
+}
+.motanoidung_desc{
+    padding:0px 0px 20px 0px;
+}
+/* #flex_container {
+    flex-wrap:wrap; */
+@media(max-width: 800px) {
+    #anh_trai {
+        flex:100%;
+    }
+    #vungbenphai{
+        flex:100%;
+        margin : 5px 0px 0px 0px;
+    }
+    #flex_container {
+        flex-wrap:wrap;        
+    }
+    .thanhphanmucbang{
+        flex:50%;
+    }
+}    
+@media(max-width: 400px) {
+    #anh_trai {
+        flex:100%;
+    }
+    #vungbenphai{
+        flex:100%;
+        margin : 5px 0px 0px 0px;
+    }
+        #flex_container {
+        flex-wrap:wrap;
+    }
+    .thanhphanmucbang{
+        flex:50%;
+    }    
+}
